@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edittext"
+        android:inputType="number"
+        android:layout_width="0dp"
+        app:layout_constraintTop_toTopOf="@+id/spinner"
+        app:layout_constraintStart_toEndOf="@+id/spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner"
+        android:layout_marginEnd="30dp"
+        android:layout_height="wrap_content"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/edittext"
+        app:layout_constraintStart_toStartOf="@+id/edittext"
+        app:layout_constraintEnd_toEndOf="@+id/edittext"
+        app:layout_constraintBottom_toTopOf="@+id/ll_bottom"
+        android:orientation="vertical"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/tvValue1"
+                android:textColor="@color/red"
+                tools:text="1000"
+                android:gravity="end"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvUnit1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/gray"
+                tools:text="@string/centimetre"
+                android:typeface="sans"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/tvValue2"
+                android:textColor="@color/red"
+                tools:text="1000"
+                android:gravity="end"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvUnit2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/gray"
+                tools:text="@string/foot"
+                android:typeface="sans"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/tvValue3"
+                android:textColor="@color/red"
+                tools:text="1000"
+                android:gravity="end"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvUnit3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/gray"
+                tools:text="@string/inch"
+                android:typeface="sans"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ivMetre"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_metre" />
+        <ImageView
+            android:id="@+id/ivCelsius"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_celsius" />
+        <ImageView
+            android:id="@+id/ivKg"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_kg" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

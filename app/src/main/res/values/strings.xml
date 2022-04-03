@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Unit Converter</string>
+    <string-array name="units">
+        <item>Metre</item>
+        <item>Celsius</item>
+        <item>Kilograms</item>
+    </string-array>
+
+    <string name="centimetre">Centimetre</string>
+    <string name="foot">Foot</string>
+    <string name="inch">Inch</string>
+
+    <string name="gram">Gram</string>
+    <string name="ounce">Ounce(Oz)</string>
+    <string name="pound">Pound(lb)</string>
+
+    <string name="fahrenheit">Fahrenheit</string>
+    <string name="kelvin">Kelvin</string>
+</resources>
